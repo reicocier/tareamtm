@@ -14,8 +14,8 @@ class Actor(models.Model):
 #aplican, esto es un ORM (manejo orientado a objetos), aunque internamente la BD si sea SQL
 
 class Pelicula(models.Model):
-    nombre    = models.CharField(max_length=60)
-    anio      = models.IntegerField()
+    nombre = models.CharField(max_length=60)
+    anio = models.IntegerField()
     
 #Aquí indicamos que la propiedad actores es del tipo Many to Many. Y le indicamos que se relaciona con Actor a través (through) la clase Actuación, que se define más adelante.
 
